@@ -27,7 +27,7 @@ namespace CleanArchMvc.Infra.IoC
 
             services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/Account/Login");
             services.AddScoped<IAuthenticate, AuthenticateService>();
-            services.AddScoped<ISeedUserRoleInitial, ISeedUserRoleInitial>();
+            services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductService, ProductService>();
